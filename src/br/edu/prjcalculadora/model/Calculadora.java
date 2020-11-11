@@ -1,5 +1,7 @@
 package br.edu.prjcalculadora.model;
 
+import java.sql.SQLOutput;
+
 public class Calculadora {
     private double vlr1;
     private double vlr2;
@@ -42,10 +44,12 @@ public class Calculadora {
     }
 
     public void divisao (double v1, double v2){
-        if(v2==0){
+        if(v2 ==0){
             result = 0;
         }else {
             result = v1/v2;
         }
+
+
     }
 }
